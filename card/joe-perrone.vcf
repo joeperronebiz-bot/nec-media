@@ -3,7 +3,8 @@ VERSION:3.0
 N:Perrone;Joe;;;
 FN:Joe Perrone
 ORG:New England Collision
-TEL;TYPE=WORK,VOICE:(203) 389-6400
-ADR;TYPE=WORK:;;465 Derby Ave;West Haven;CT;;USA
+TEL;TYPE=WORK,VOICE:+12033896400
+ADR;TYPE=WORK:;;465 Derby Ave;West Haven;CT;;
 URL:https://necollision.com
+URL:https://joeperronebiz-bot.github.io/nec-media/card/
 END:VCARD
