@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Perrone;Joe;;;
+FN:Joe Perrone
+ORG:New England Collision
+TEL;TYPE=WORK,VOICE:(203) 389-6400
+ADR;TYPE=WORK:;;465 Derby Ave;West Haven;CT;;USA
+URL:https://necollision.com
+END:VCARD
