@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11100F">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Tell the owner, Joe, directly · New England Collision</title>
+  <meta name="description" content="Thanks for telling us. Joe reads every one and we'll make it right.">
+  <style>
+    :root {
+      --ink: #11100F;
+      --bone: #ECE7DD;
+      --red: #C41E36;
+      --red-dark: #8A1226;
+      --paper: #F7F3EC;
+      --line: #D5CFC3;
+      --muted: #5A564F;
+    }
+    * { box-sizing: border-box; margin: 0; -webkit-tap-highlight-color: transparent; }
+    html, body { background: var(--paper); color: var(--ink); }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      line-height: 1.45;
+    }
+    main {
+      max-width: 34rem;
+      margin: 0 auto;
+      padding: max(1.25rem, env(safe-area-inset-top)) 1.25rem max(2rem, env(safe-area-inset-bottom));
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    /* Round photo placeholder until a confirmed real photo of Joe is chosen. Do not invent a face. */
+    .photo {
+      flex: none;
+      width: 5.5rem;
+      height: 5.5rem;
+      border-radius: 50%;
+      background: #E4DED4;
+      border: 2px solid var(--line);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 1.35rem;
+      letter-spacing: .06em;
+      color: var(--ink);
+      overflow: hidden;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none; /* shown when a confirmed photo is added */
+    }
+    .hero-text h1 {
+      font-size: 1.45rem;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .hero-text p {
+      margin-top: .4rem;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    form { display: grid; gap: 1rem; }
+    label {
+      display: grid;
+      gap: .35rem;
+      font-size: .92rem;
+      font-weight: 650;
+    }
+    .optional { font-weight: 500; color: var(--muted); }
+    input, textarea {
+      width: 100%;
+      font: inherit;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: .65rem;
+      padding: .85rem .9rem;
+      outline: none;
+    }
+    textarea { min-height: 8rem; resize: vertical; }
+    input:focus, textarea:focus {
+      border-color: var(--ink);
+      box-shadow: 0 0 0 3px rgba(17,16,15,.12);
+    }
+    .honey { position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden; }
+    button[type="submit"] {
+      margin-top: .35rem;
+      height: 3.25rem;
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #e0415b 0%, var(--red) 42%, var(--red-dark) 100%);
+      color: var(--bone);
+      font: inherit;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(196,30,54,.28);
+    }
+    button[type="submit"]:active { transform: scale(.98); }
+    footer {
+      margin-top: 2rem;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="photo" aria-hidden="true"><span>JP</span></div>
+      <div class="hero-text">
+        <h1>Tell the owner, Joe, directly</h1>
+        <p>Thanks for telling us. Joe reads every one and we'll make it right.</p>
+      </div>
+    </header>
+
+    <form action="https://formsubmit.co/joeon34@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="NEC owner feedback from a customer">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://joeperronebiz-bot.github.io/nec-media/tell-joe/thanks.html">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+
+      <label>
+        Name
+        <input type="text" name="Name" autocomplete="name" required>
+      </label>
+      <label>
+        Phone
+        <input type="tel" name="Phone" autocomplete="tel" inputmode="tel" required>
+      </label>
+      <label>
+        What can we make right?
+        <textarea name="What can we make right?" required></textarea>
+      </label>
+      <label>
+        RO or vehicle <span class="optional">(optional)</span>
+        <input type="text" name="RO or vehicle" autocomplete="off">
+      </label>
+      <button type="submit">Send to Joe</button>
+    </form>
+
+    <footer>New England Collision · 465 Derby Ave, West Haven CT</footer>
+  </main>
+</body>
+</html>
