@@ -35,7 +35,7 @@
       gap: 1rem;
       margin-bottom: 1.5rem;
     }
-    /* Round photo placeholder until a confirmed real photo of Joe is chosen. Do not invent a face. */
+    /* Round headshot from the photo Joe chose on Nov 23, 2026. */
     .photo {
       flex: none;
       width: 5.5rem;
@@ -55,7 +55,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: none; /* shown when a confirmed photo is added */
+      display: block;
     }
     .hero-text h1 {
       font-size: 1.45rem;
@@ -118,7 +118,7 @@
 <body>
   <main>
     <header class="hero">
-      <div class="photo" aria-hidden="true"><span>JP</span></div>
+      <div class="photo"><img src="joe.jpg" width="300" height="300" alt="Joe Perrone"></div>
       <div class="hero-text">
         <h1>Tell the owner, Joe, directly</h1>
         <p>Thanks for telling us. Joe reads every one and we'll make it right.</p>
